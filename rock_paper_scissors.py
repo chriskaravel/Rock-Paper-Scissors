@@ -22,7 +22,7 @@ def start():
     while game():
         pass
     scores()
-
+    
 def game():
     player = move()
     computer = random.randint(1,3)
@@ -61,15 +61,13 @@ def result(player,computer):
         print(rules[player])
         print(computer)
         computer_score += 1
-
-
+        
 def play_again():
     answer = input ("Would u like to play again? y/n: ")
     if answer.upper() in ("Y","YES"):
         return answer
     else:
         print("Thank you for playing.See you next time!")
-
 
 if __name__ == '__main__':
     start()
